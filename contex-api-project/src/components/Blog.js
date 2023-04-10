@@ -5,9 +5,9 @@ import Card from "./Card";
 
 const Blog = () => {
   const { loading, posts } = useContext(AppContext);
- console.log(loading);
+  console.log(loading);
   return (
-    <div className="w-full">
+    <div className="mt-12">
       {loading ? (
         <Spinner />
       ) : posts.length === 0 ? (

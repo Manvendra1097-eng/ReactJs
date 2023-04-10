@@ -2,17 +2,19 @@ import React from "react";
 
 const Card = ({ post }) => {
   return (
-    <div className="w-11/12 mx-auto p-6">
-      <p className="font-bold text-2xl">{post.title}</p>
-      <p>
-        By <span>{post.author}</span>
-        on <span>{post.category}</span>
-      </p>
-      <p>Posted on {post.date}</p>
-      <p>{post.content}</p>
-      <div>
+    <div className="w-11/12 mx-auto px-6 py-2 flex flex-col gap-y-2">
+      <p className="font-bold ">{post.title}</p>
+      <div className="text-xs">
+        <p>
+          By <span className="italic">{post.author}</span>
+          on <span className="underline">{post.category}</span>
+        </p>
+        <p>Posted on {post.date}</p>
+      </div>
+      <p className="text-sm">{post.content}</p>
+      <div className="flex space-x-2 text-xs text-blue-600">
         {post.tags.map((tag, index) => (
-          <span key={index}>{`#${tag}`}</span>
+          <span className="underline font-semibold" key={index}>{`#${tag}`}</span>
         ))}
       </div>
     </div>

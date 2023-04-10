@@ -9,9 +9,8 @@ function App() {
   const { fetchBlogs } = useContext(AppContext);
 
   useEffect(() => fetchBlogs(), []);
-
   return (
-    <div className="bg-slate-100 h-screen w-screen flex flex-col items-center justify-center overflow-x-hidden">
+    <div className="w-full h-full flex flex-col gap-y-2 items-center overflow-x-hidden relative">
       <Navbar />
       <Blog />
       <Footer />
