@@ -32,7 +32,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
-      <Route path="/blog:blogId" element={<BlogPage />}></Route>
+      <Route path="/blog/:blogId" element={<BlogPage />}></Route>
       <Route path="/tags/:tag" element={<TagPage />}></Route>
       <Route path="/categories/:category" element={<CategoryPage />}></Route>
     </Routes>
