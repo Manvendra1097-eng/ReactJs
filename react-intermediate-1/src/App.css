@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.App form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 20rem;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  all: unset;
+  background-color: rgba(236, 12, 236, 0.187);
+  padding: 0.3rem 0.5rem;
+  width: 100%;
+}
